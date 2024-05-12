@@ -40,3 +40,12 @@ The following packages were added:
 The following packages were updated:
   com.unity.render-pipelines.universal from version 17.0.2 to 17.0.3
   com.unity.visualscripting from version 1.9.2 to 1.9.4
+
+=== Sun May 12 22:29:17 2024
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.inputsystem from version 1.8.1 to 1.8.2
+  com.unity.test-framework from version 1.4.3 to 1.4.4

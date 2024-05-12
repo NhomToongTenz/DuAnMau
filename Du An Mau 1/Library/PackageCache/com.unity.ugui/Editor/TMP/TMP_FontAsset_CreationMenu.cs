@@ -227,7 +227,7 @@ namespace TMPro
             AssetDatabase.AddObjectToAsset(mat, fontAsset);
 
             // Add Font Asset Creation Settings
-            fontAsset.creationSettings = new FontAssetCreationSettings(fontAsset.m_SourceFontFileGUID, fontAsset.faceInfo.pointSize, 0, atlasPadding, 0, 1024, 1024, 7, string.Empty, (int)renderMode);
+            fontAsset.creationSettings = new FontAssetCreationSettings(fontAsset.m_SourceFontFileGUID, (int)fontAsset.faceInfo.pointSize, 0, atlasPadding, 0, 1024, 1024, 7, string.Empty, (int)renderMode);
 
             // Not sure if this is still necessary in newer versions of Unity.
             //EditorUtility.SetDirty(fontAsset);

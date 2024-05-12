@@ -1230,7 +1230,7 @@ namespace TMPro.EditorUtilities
         /// </summary>
         void UpdateRenderFeedbackWindow()
         {
-            m_PointSize = m_FaceInfo.pointSize;
+            m_PointSize = (int)m_FaceInfo.pointSize;
 
             string missingGlyphReport = string.Empty;
 

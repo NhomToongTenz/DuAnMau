@@ -15,6 +15,8 @@
 // UnityEngine.Rendering.APVDefinitions:  static fields
 //
 #define PROBE_INDEX_CHUNK_SIZE (243)
+#define PROBE_VALIDITY_THRESHOLD (0.05)
+#define PROBE_MAX_REGION_COUNT (4)
 
 // Generated from UnityEngine.Rendering.ShaderVariablesProbeVolumes
 // PackingRules = Exact
@@ -27,7 +29,8 @@ GLOBAL_CBUFFER_START(ShaderVariablesProbeVolumes, b6)
     float4 _IndicesDim_FrameIndex;
     float4 _Biases_NormalizationClamp;
     float4 _LeakReduction_SkyOcclusion;
-    float4 _MaxLoadedCellInEntries_Padding;
+    float4 _MaxLoadedCellInEntries_LayerCount;
+    uint4 _ProbeVolumeLayerMask;
 CBUFFER_END
 
 

@@ -578,9 +578,15 @@ namespace TMPro.EditorUtilities
                                 m_DisplayDestructiveChangeWarning = false;
 
                                 // Update face info if sampling point size was changed.
+#if UNITY_2023_3_OR_NEWER
+                                if (m_GenerationSettings.pointSize != m_SamplingPointSize_prop.floatValue || m_FaceInfoDirty)
+                                {
+                                    LoadFontFace((int)m_SamplingPointSize_prop.floatValue, m_FontFaceIndex_prop.intValue);
+#else
                                 if (m_GenerationSettings.pointSize != m_SamplingPointSize_prop.intValue || m_FaceInfoDirty)
                                 {
                                     LoadFontFace(m_SamplingPointSize_prop.intValue, m_FontFaceIndex_prop.intValue);
+#endif
                                     m_fontAsset.faceInfo = FontEngine.GetFaceInfo();
                                     m_FaceInfoDirty = false;
                                 }
@@ -1990,7 +1996,11 @@ namespace TMPro.EditorUtilities
 
         string[] GetFontFaces(int faceIndex)
         {
+#if UNITY_2023_3_OR_NEWER
+            if (LoadFontFace((int)m_SamplingPointSize_prop.floatValue, faceIndex) == FontEngineError.Success)
+#else
             if (LoadFontFace(m_SamplingPointSize_prop.intValue, faceIndex) == FontEngineError.Success)
+#endif
                 return FontEngine.GetFontFaces();
 
             return k_InvalidFontFaces;
@@ -2042,7 +2052,11 @@ namespace TMPro.EditorUtilities
         {
             m_GenerationSettings.faceIndex = m_FontFaceIndex_prop.intValue;
             m_GenerationSettings.glyphRenderMode = (GlyphRenderMode)m_AtlasRenderMode_prop.intValue;
+#if UNITY_2023_3_OR_NEWER
+            m_GenerationSettings.pointSize       = (int)m_SamplingPointSize_prop.floatValue;
+#else
             m_GenerationSettings.pointSize       = m_SamplingPointSize_prop.intValue;
+#endif
             m_GenerationSettings.padding         = m_AtlasPadding_prop.intValue;
             m_GenerationSettings.atlasWidth      = m_AtlasWidth_prop.intValue;
             m_GenerationSettings.atlasHeight     = m_AtlasHeight_prop.intValue;
@@ -2052,7 +2066,11 @@ namespace TMPro.EditorUtilities
         {
             m_fontAsset.SourceFont_EditorRef = m_GenerationSettings.sourceFont;
             m_FontFaceIndex_prop.intValue = m_GenerationSettings.faceIndex;
+#if UNITY_2023_3_OR_NEWER
+            m_SamplingPointSize_prop.floatValue = m_GenerationSettings.pointSize;
+#else
             m_SamplingPointSize_prop.intValue = m_GenerationSettings.pointSize;
+#endif
             m_FontFaces = GetFontFaces();
 
             m_AtlasRenderMode_prop.intValue = (int)m_GenerationSettings.glyphRenderMode;
@@ -2065,7 +2083,11 @@ namespace TMPro.EditorUtilities
         void UpdateFontAssetCreationSettings()
         {
             m_fontAsset.m_CreationSettings.faceIndex = m_FontFaceIndex_prop.intValue;
+#if UNITY_2023_3_OR_NEWER
+            m_fontAsset.m_CreationSettings.pointSize = (int)m_SamplingPointSize_prop.floatValue;
+#else
             m_fontAsset.m_CreationSettings.pointSize = m_SamplingPointSize_prop.intValue;
+#endif
             m_fontAsset.m_CreationSettings.renderMode = m_AtlasRenderMode_prop.intValue;
             m_fontAsset.m_CreationSettings.padding = m_AtlasPadding_prop.intValue;
             m_fontAsset.m_CreationSettings.atlasWidth = m_AtlasWidth_prop.intValue;
