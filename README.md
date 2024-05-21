@@ -4,7 +4,7 @@
 
 
 ## Giới thiệu
-Chào mừng bạn đến với Hành Trình Vô Cực! Đây là dự án game được phát triển bởi nhóm Toong Tenz cho môn học "Dự Án Mẫu 1". Chúng tôi đã xây dựng một thế giới game đầy màu sắc và hấp dẫn, nơi người chơi sẽ được tham gia vào những cuộc phiêu lưu bất tận. Trò chơi mang đến trải nghiệm độc đáo, nơi người chơi có thể thỏa sức sáng tạo và khám phá những điều mới mẻ.
+Chào mừng bạn đến với Hành Trình Vô Cực! Đây là dự án game được phát triển bởi Nhôm Tòong Tenz cho môn học "Dự Án Mẫu 1". Chúng tôi đã xây dựng một thế giới game đầy màu sắc và hấp dẫn, nơi người chơi sẽ được tham gia vào những cuộc phiêu lưu bất tận. Trò chơi mang đến trải nghiệm độc đáo, nơi người chơi có thể thỏa sức sáng tạo và khám phá những điều mới mẻ.
 
 **Table of Contents**
 * [Installation](#installation)
