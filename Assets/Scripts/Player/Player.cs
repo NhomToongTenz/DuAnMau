@@ -8,7 +8,9 @@ public class Player : Entity
     [Header("Move Info")]
     public float moveSpeed = 5f;
     public float jumpForce = 5f;
-   [HideInInspector] public Vector2 movementInput;
+    public PlayerInputHandler inputHandler { get; private set; }
+    
+    
     
     public bool isBusy { get; private set; }
 
@@ -32,8 +34,8 @@ public class Player : Entity
         idleState = new PlayerIdleState(this, stateMachine, "idle");
         moveState = new PlayerMoveState(this, stateMachine, "move");
         jumpState = new PlayerJumpState(this, stateMachine, "jump");
-        groundedState = new PlayerGroundedState(this, stateMachine, "grounded");
-        airState = new PlayerAirState(this, stateMachine, "air");
+        //groundedState = new PlayerGroundedState(this, stateMachine, "grounded");
+        airState = new PlayerAirState(this, stateMachine, "jump");
         
     }
 
@@ -48,6 +50,8 @@ public class Player : Entity
     {
         base.Start();
         stateMachine.Initialize(idleState);
+        inputHandler = GetComponent<PlayerInputHandler>();
+        
     }
 
     public void AnimationTriggers()=> stateMachine.currentState.AnimationFinishTrigger();
@@ -58,9 +62,7 @@ public class Player : Entity
         isBusy = false;
     }
     
-    void OnMove (InputValue value)
-    {
-        movementInput = value.Get<Vector2>();
-    }
+    
+    
     
 }

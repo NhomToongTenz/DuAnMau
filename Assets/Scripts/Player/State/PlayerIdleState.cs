@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerIdleState : PlayerState
+public class PlayerIdleState : PlayerGroundedState
 {
     public PlayerIdleState(Player player, PlayerStateMachine stateMachine, string animBoolName) : base(player, stateMachine, animBoolName)
     {
@@ -11,7 +11,9 @@ public class PlayerIdleState : PlayerState
     public override void Enter()
     {
         base.Enter();
-        _player.SetZeroVelocity();
+        
+        player.SetZeroVelocity();
+        
     }
 
     public override void Exit()
@@ -22,11 +24,14 @@ public class PlayerIdleState : PlayerState
     public override void Update()
     {
         base.Update();
-        if(_movementInput.x == _player.facingDirection)
+        
+        if(input.x == player.facingDirection && player.IsTouchingWall())
             return;
-        if(_movementInput.x != 0 && !_player.isBusy)
-        {
-            _stateMachine.ChangeState(_player.moveState);
-        }
+        
+        if(input.x != 0f)
+           stateMachine.ChangeState(player.moveState);
+        
+       
+        
     }
 }

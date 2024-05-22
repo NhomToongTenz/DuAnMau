@@ -1,14 +1,16 @@
-using UnityEngine.InputSystem   ;
+
 using UnityEngine;
 
 public class PlayerState
 {
-    protected Player _player;
-    protected PlayerStateMachine _stateMachine;
+    protected Player player;
+    protected PlayerStateMachine stateMachine;
     protected string _animBoolName;
-
+    
+    protected Vector2 input;
     //protected Animator anim;
-    protected Vector2 _movementInput;
+    
+    
     protected Rigidbody2D rb;
 
     protected float stateTimer;
@@ -16,28 +18,28 @@ public class PlayerState
 
     public PlayerState(Player player, PlayerStateMachine stateMachine, string animBoolName)
     {
-        _player = player;
-        _stateMachine = stateMachine;
+        this.player = player;
+        this.stateMachine = stateMachine;
         _animBoolName = animBoolName;
     }
 
     public virtual void Enter()
     {
-        _player.anim.SetBool(_animBoolName, true);
-        rb = _player.rb;
+        player.anim.SetBool(_animBoolName, true);
+        rb = player.rb;
         triggerCalled = false;
     }
 
     public virtual void Exit()
     {
-        _player.anim.SetBool(_animBoolName, false);
+        player.anim.SetBool(_animBoolName, false);
     }
 
     public virtual void Update()
     {
         stateTimer -= Time.deltaTime;
-        _movementInput = _player.movementInput;
-        _player.anim.SetFloat("yVelocity", rb.velocity.y);
+        
+        player.anim.SetFloat("yVelocity", rb.velocity.y);
     }
     
     

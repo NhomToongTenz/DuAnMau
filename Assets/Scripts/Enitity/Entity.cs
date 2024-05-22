@@ -87,8 +87,8 @@ public class Entity : MonoBehaviour
 
     #region collision
 
-    public virtual bool IsGroundDe => Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, groundLayer);
-    public virtual bool IsTouchingWall => Physics2D.Raycast(wallCheck.position, transform.right, wallCheckDistance, wallLayer);
+    public virtual bool IsGroundDetected() => Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, groundLayer);
+    public virtual bool IsTouchingWall() => Physics2D.Raycast(wallCheck.position, transform.right, wallCheckDistance, wallLayer);
 
     protected void OnDrawGizmos()
     {

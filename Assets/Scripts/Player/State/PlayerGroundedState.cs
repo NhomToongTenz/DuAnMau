@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEngine;
-using UnityEngine.InputSystem;
+
 
 public class PlayerGroundedState : PlayerState
 {
+    
+    protected bool jumpInput;
     public PlayerGroundedState(Player player, PlayerStateMachine stateMachine, string animBoolName) : base(player, stateMachine, animBoolName)
     {
     }
@@ -23,7 +21,28 @@ public class PlayerGroundedState : PlayerState
     public override void Update()
     {
         base.Update();
+
+        input = player.inputHandler.movementInput;
+        jumpInput = player.inputHandler.jumpInput;
+
+        if (!player.IsGroundDetected())
+        {
+            stateMachine.ChangeState(player.airState);
+            
+        }
+
+        if (jumpInput && player.IsGroundDetected())
+        {
+            player.inputHandler.UseJumpInput();
+            stateMachine.ChangeState(player.jumpState);
+        }
+        
+        
+        
+        
     }
+    
+    
     
     
 }
