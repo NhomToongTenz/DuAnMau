@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerMoveState : PlayerGroundedState
 {
@@ -23,9 +19,10 @@ public class PlayerMoveState : PlayerGroundedState
     {
         base.Update();
         
-        _player.SetVelocity(_movementInput.x * _player.moveSpeed, rb.velocity.y);
-        if(_movementInput.x == 0 || _player.IsTouchingWall)
-            _stateMachine.ChangeState(_player.idleState);
+        player.SetVelocity(player.moveSpeed * input.x, rb.velocity.y);
+        
+       if(input.x == 0f || player.IsTouchingWall())
+           stateMachine.ChangeState(player.idleState);
         
     }
     

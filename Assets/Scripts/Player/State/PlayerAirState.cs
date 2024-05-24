@@ -11,6 +11,7 @@ public class PlayerAirState : PlayerState
     public override void Enter()
     {
         base.Enter();
+        
     }
 
     public override void Exit()
@@ -19,7 +20,15 @@ public class PlayerAirState : PlayerState
     }
 
     public override void Update()
-    {
+    { 
         base.Update();
+        
+        if(player.IsGroundDetected())
+            stateMachine.ChangeState(player.idleState);
+        
+        if(input.x != 0)
+           player.SetVelocity(player.moveSpeed *.8f * input.x, rb.velocity.y);
+        
+        
     }
 }
