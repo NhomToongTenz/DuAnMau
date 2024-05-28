@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground
+    uniqueID: 3854773053
+    locked: 0
+  - name: Menu
+    uniqueID: 4100787003
+    locked: 0
+  - name: GameOver
+    uniqueID: 366127139
+    locked: 0
