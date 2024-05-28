@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Enitity;
 using UnityEngine;
 using UnityEngine.InputSystem;
 public class Player : Entity
@@ -8,6 +9,15 @@ public class Player : Entity
     [Header("Move Info")]
     public float moveSpeed = 5f;
     public float jumpForce = 5f;
+    private float miveSpeedDefault;
+    private float jumpForceDefault;
+    
+    [Header("Dash Info")]
+    public float dashTimeDuration = 0.1f;
+    public float dashSpeed = 10f;
+    private float dashSpeedDefault;
+    public float dashDirection { get; private set; } = 1f;
+    
     public PlayerInputHandler inputHandler { get; private set; }
     
     
@@ -22,7 +32,8 @@ public class Player : Entity
     public PlayerJumpState jumpState { get; private set; }
     public PlayerGroundedState groundedState { get; private set; }
     public PlayerAirState airState { get; private set; }
-
+    public PlayerDashState dashState { get; private set; }
+    
     #endregion
     
     
@@ -36,13 +47,14 @@ public class Player : Entity
         jumpState = new PlayerJumpState(this, stateMachine, "jump");
         //groundedState = new PlayerGroundedState(this, stateMachine, "grounded");
         airState = new PlayerAirState(this, stateMachine, "jump");
-        
+        dashState = new PlayerDashState(this, stateMachine, "dash");
     }
 
     protected override void Update()
     {
         base.Update();
         stateMachine.currentState.Update();
+        CheckForDash();
         
     }
 
@@ -52,6 +64,9 @@ public class Player : Entity
         stateMachine.Initialize(idleState);
         inputHandler = GetComponent<PlayerInputHandler>();
         
+        miveSpeedDefault = moveSpeed;
+        jumpForceDefault = jumpForce;
+        dashSpeedDefault = dashSpeed;
     }
 
     public void AnimationTriggers()=> stateMachine.currentState.AnimationFinishTrigger();
@@ -61,8 +76,32 @@ public class Player : Entity
         yield return new WaitForSeconds(duration);
         isBusy = false;
     }
+
+
+    public override bool IsGroundDetected()
+    {
+        return base.IsGroundDetected();
+    }
     
-    
-    
+    private void CheckForDash()
+    {
+        
+        if(IsTouchingWall())
+            return;
+        
+        
+        
+        if (inputHandler.dashInput)
+        {
+            dashDirection = inputHandler.movementInput.x;
+            if(dashDirection == 0)
+                dashDirection = facingDirection;
+            stateMachine.ChangeState(dashState);
+            
+            
+        }
+        
+            
+    }
     
 }
