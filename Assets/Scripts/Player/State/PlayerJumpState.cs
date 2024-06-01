@@ -5,13 +5,13 @@ using UnityEngine;
 public class PlayerJumpState : PlayerState
 {
     public PlayerJumpState(Player player, PlayerStateMachine stateMachine, string animBoolName) : base(player, stateMachine, animBoolName)
-    {
+    {      
     }
-
+    
     public override void Enter()
     {
         base.Enter();
-        player.SetVelocity(rb.velocity.x, player.jumpForce);
+        player.SetVelocity(rb.velocity.x, player.jumpForce);      
     }
 
     public override void Exit()

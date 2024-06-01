@@ -1,23 +1,26 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Audio;
+using System;
 
 public class SoundManager : MonoBehaviour
 {
     public Sound[] sounds;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
+        PlayAudio("Theme_Song");
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
+
 
     private void Awake()
     {
@@ -39,3 +42,4 @@ public class SoundManager : MonoBehaviour
         s.source.Play();
     }
 }
+
