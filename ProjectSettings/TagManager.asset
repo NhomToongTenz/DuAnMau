@@ -38,6 +38,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: nen
+    uniqueID: 700504899
+    locked: 0
+  - name: diahinh
+    uniqueID: 1015374569
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
