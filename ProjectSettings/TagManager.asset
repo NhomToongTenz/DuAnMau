@@ -41,6 +41,7 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+<<<<<<< HEAD
   - name: Ground
     uniqueID: 3854773053
     locked: 0
@@ -49,4 +50,8 @@ TagManager:
     locked: 0
   - name: GameOver
     uniqueID: 366127139
+=======
+  - name: Player
+    uniqueID: 3926537677
+>>>>>>> main
     locked: 0
