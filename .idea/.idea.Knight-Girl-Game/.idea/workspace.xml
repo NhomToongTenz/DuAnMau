@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b6f33ba6-ddbb-4376-b19f-550aa5fa00db" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="InGameUI" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:NhomToongTenz/Knight-Girl-Game.git&quot;,
+    &quot;accountId&quot;: &quot;07081f9d-c2ce-47d0-859d-6caabc07772c&quot;
+  },
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
+    },
+    &quot;owner&quot;: &quot;NhomToongTenz&quot;,
+    &quot;repository&quot;: &quot;Knight-Girl-Game&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/thinhom/Documents/unity/Knight-Girl-Game/Assets/Scripts/Item/Equipment/Weapon/Ice and fire.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Items and Inventory/Effect/FreezeEnemiesEffect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI_StatSlot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collab-proxy/Editor/PlasticSCM/Views/PendingChanges/UnityPendingChangesTree.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core/Runtime/RenderPipeline/RenderPipelineGlobalSettingsUtils.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.splines/Samples~/Runtime/ItemPickup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Runtime/UGUI/EventSystem/EventInterfaces.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting/Runtime/VisualScripting.Flow/Framework/Collections/Lists/RemoveListItem.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2gnJsdHpOMBH0yNN1b6UqdVhuqL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;idea.background.editor&quot;: &quot;/Users/thinhom/Pictures/Photos Library.photoslibrary/originals/1/14C6FFB5-DCF0-45DE-B876-3B2F5B40D872.jpeg,15,scale,center&quot;,
+    &quot;idea.background.frame&quot;: &quot;/Users/thinhom/Pictures/Photos Library.photoslibrary/originals/2/20B477DF-D17E-4460-9C90-2ADF8550A53A.jpeg,15,scale,center&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/thinhom/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/thinhom/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache&quot;,
+      &quot;/Users/thinhom/Library/Application Support/Symbols/src&quot;
+    ]
+  }
+}</component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.3f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.3f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b6f33ba6-ddbb-4376-b19f-550aa5fa00db" name="Changes" comment="" />
+      <created>1716327616224</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716327616224</updated>
+      <workItem from="1716327619428" duration="4000" />
+      <workItem from="1716358495987" duration="65000" />
+      <workItem from="1716358590519" duration="7596000" />
+      <workItem from="1716367304483" duration="1492000" />
+      <workItem from="1716400424297" duration="2658000" />
+      <workItem from="1716404173949" duration="335000" />
+      <workItem from="1716407236901" duration="6855000" />
+      <workItem from="1716557194644" duration="2170000" />
+      <workItem from="1716641916169" duration="8142000" />
+      <workItem from="1716652254017" duration="317000" />
+      <workItem from="1716656862890" duration="15000" />
+      <workItem from="1716657092830" duration="2593000" />
+      <workItem from="1716660363591" duration="266000" />
+      <workItem from="1716660747182" duration="67000" />
+      <workItem from="1717014363463" duration="114000" />
+      <workItem from="1717014705635" duration="4763000" />
+      <workItem from="1717145030810" duration="86000" />
+      <workItem from="1717156688386" duration="643000" />
+      <workItem from="1717164403249" duration="603000" />
+      <workItem from="1717174596332" duration="11711000" />
+      <workItem from="1717225952791" duration="26362000" />
+      <workItem from="1717274873761" duration="16766000" />
+      <workItem from="1717351281814" duration="1605000" />
+      <workItem from="1717401391389" duration="227000" />
+    </task>
+    <task id="LOCAL-00001" summary="Craft UI Script">
+      <option name="closed" value="true" />
+      <created>1717179439980</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717179439980</updated>
+    </task>
+    <task id="LOCAL-00002" summary="URP, Prefabs Asset">
+      <option name="closed" value="true" />
+      <created>1717179468078</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717179468078</updated>
+    </task>
+    <task id="LOCAL-00003" summary="UI_CraftList.cs">
+      <option name="closed" value="true" />
+      <created>1717228246763</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717228246763</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Item_">
+      <option name="closed" value="true" />
+      <created>1717228262750</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717228262750</updated>
+    </task>
+    <task id="LOCAL-00005" summary="UI_SkillToolTip.cs">
+      <option name="closed" value="true" />
+      <created>1717250466526</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717250466526</updated>
+    </task>
+    <task id="LOCAL-00006" summary="unityfile">
+      <option name="closed" value="true" />
+      <created>1717250484883</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717250484883</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Merge Dash SKill">
+      <option name="closed" value="true" />
+      <created>1717256319416</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717256319416</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Parry_Skill.cs">
+      <option name="closed" value="true" />
+      <created>1717264820897</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1717264820897</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Sword_Skill.cs &#10;Sword_Skill_Controller.cs&#10;updatefile">
+      <option name="closed" value="true" />
+      <created>1717274421069</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1717274421069</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Hot fix SkillTree UI">
+      <option name="closed" value="true" />
+      <created>1717341651378</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1717341651379</updated>
+    </task>
+    <task id="LOCAL-00011" summary="InGmaeUI">
+      <option name="closed" value="true" />
+      <created>1717345985874</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717345985874</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fixupdated">
+      <option name="closed" value="true" />
+      <created>1717401607101</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1717401607101</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+    <option name="unityProject" value="true" />
+    <option name="unityProjectFolder" value="true" />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Craft UI Script" />
+    <MESSAGE value="URP, Prefabs Asset" />
+    <MESSAGE value="UI_CraftList.cs" />
+    <MESSAGE value="Item_" />
+    <MESSAGE value="UI_SkillToolTip.cs" />
+    <MESSAGE value="unityfile" />
+    <MESSAGE value="Merge Dash SKill" />
+    <MESSAGE value="Parry_Skill.cs" />
+    <MESSAGE value="Sword_Skill.cs &#10;Sword_Skill_Controller.cs&#10;updatefile" />
+    <MESSAGE value="Hot fix SkillTree UI" />
+    <MESSAGE value="InGmaeUI" />
+    <MESSAGE value="Fixupdated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixupdated" />
+  </component>
+</project>
