@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerDashState : PlayerState
 {
-    public PlayerDashState(Player player, PlayerStateMachine stateMachine, string animBoolName) : base(player, stateMachine, animBoolName)
+    public PlayerDashState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
     }
 
@@ -12,29 +12,32 @@ public class PlayerDashState : PlayerState
     {
         base.Enter();
         
-        //player.inputHandler.OnDashRelease();
-        stateTimer = player.dashTimeDuration;
+        player.skillManager.dashSkill.CloneOnDash();       
         
-    }
+        //player.skillManager.cloneSkill.CreateClone(player.transform, Vector3.zero); // add offset to the clone
 
-    public override void Exit()
-    {
-        base.Exit();
-        
-        player.SetVelocity(0f, rb.velocity.y);
-        
-       
-        
+        stateTimer = player.dashDuration;
     }
 
     public override void Update()
     {
         base.Update();
+        if(!player.IsGroundDetected() && player.IsWallDetected())
+            stateMachine.ChangeState(player.wallSlideState);
         
         player.SetVelocity(player.dashSpeed * player.dashDirection, 0);
         
-        if(stateTimer <= 0)
+        if(stateTimer < 0)
             stateMachine.ChangeState(player.idleState);
         
+    }
+    
+    public override void Exit()
+    {
+        
+        base.Exit();
+        
+        player.skillManager.dashSkill.CloneOnDashArrival();       
+        player.SetVelocity(0f, rb.velocity.y);
     }
 }

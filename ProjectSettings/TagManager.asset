@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags: []
   layers:
   - Default
@@ -11,10 +11,10 @@ TagManager:
   - Player
   - Water
   - UI
-  - Platform
-  - 
-  - 
-  - 
+  - Ground
+  - Enemy
+  - Sword
+  - Item
   - 
   - 
   - 
@@ -41,17 +41,20 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-<<<<<<< HEAD
+  - name: BackGround
+    uniqueID: 1271480005
+    locked: 0
   - name: Ground
-    uniqueID: 3854773053
+    uniqueID: 1533006249
     locked: 0
-  - name: Menu
-    uniqueID: 4100787003
+  - name: Item
+    uniqueID: 582714307
     locked: 0
-  - name: GameOver
-    uniqueID: 366127139
-=======
+  - name: Enemy
+    uniqueID: 3079341865
+    locked: 0
   - name: Player
-    uniqueID: 3926537677
->>>>>>> main
+    uniqueID: 2447644065
     locked: 0
+  m_RenderingLayers:
+  - Default
