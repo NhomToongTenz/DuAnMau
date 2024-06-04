@@ -4,30 +4,30 @@ using UnityEngine;
 
 public class PlayerJumpState : PlayerState
 {
-    public PlayerJumpState(Player player, PlayerStateMachine stateMachine, string animBoolName) : base(player, stateMachine, animBoolName)
-    {      
-    }
     
+    public PlayerJumpState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
+    {
+    }
+
     public override void Enter()
     {
         base.Enter();
-        player.SetVelocity(rb.velocity.x, player.jumpForce);      
+            
+        rb.velocity = new Vector2(rb.velocity.x, player.jumpForce); //jumpForce is a float variable that is set to 10 in the Player script
+    }
+    
+    public override void Update()
+    {
+        base.Update();
+        //if the player is falling, change to the inAirState
+        if (rb.velocity.y < 0)
+            stateMachine.ChangeState(player.inAirState);
+        
+    
     }
 
     public override void Exit()
     {
         base.Exit();
     }
-
-    public override void Update()
-    {
-        base.Update();
-      
-
-        if(rb.velocity.y < 0)
-            stateMachine.ChangeState(player.airState);
-    }
-    
-    
-    
 }
