@@ -12,4 +12,4 @@ EditorBuildSettings:
     path: Assets/Scenes/Player Controller Test Scene/Move.unity
     guid: e36d1634ac6c35e49b55796cfb86a883
   m_configObjects:
-    com.unity.input.settings: {fileID: 11400000, guid: 741e7e06f73bc5d44a133a728185c3c8, type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: 2cb6316804c423944b827f499ea282cd, type: 2}
