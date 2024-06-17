@@ -5,7 +5,7 @@ using UnityEngine;
 public class Coin : MonoBehaviour
 {
     public ParticleSystem coinEffect;
-    SoundManager soundManager;
+    //SoundManager soundManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +24,7 @@ public class Coin : MonoBehaviour
         {
             FindObjectOfType<GameSession>().AddScore(1);
             var go = Instantiate(coinEffect, transform.position, transform.rotation);
-            FindObjectOfType<SoundManager>().PlayAudio("Collect_Coin");
+            //FindObjectOfType<SoundManager>().PlayAudio("Collect_Coin");
             Destroy(gameObject, 0.1f);
             
         }
